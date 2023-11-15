@@ -1,0 +1,41 @@
+.prepare {
+
+    height: 100vh;
+    width: 100%;
+    background: url('img/ismael-trevino-NDyuR4Huig8-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    &_content {
+        margin-right: 5em;
+        background-color: rgba(178,210,52,0.8);
+        width: 500px;
+        text-align: center;
+        padding: 20px 20px;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &_button button {
+            padding: 14px 60px;
+            margin-top: 20px;
+            @include button($clr-green, white);
+        }
+    }
+}

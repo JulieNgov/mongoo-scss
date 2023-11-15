@@ -1,0 +1,22 @@
+//Responsive
+@mixin bp($size) {
+  @media screen and (max-width: $size) {
+      @content;
+  }
+}
+
+//Flex
+@mixin flexCenter () {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background: linear-gradient(rgba(96, 160, 216, 0.62), rgba(178, 210, 52, 0.62)), url("img/header.png");
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 18px;
+  padding: 1em;
+  position: relative;
+}
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header_menu img {
+  flex-shrink: 0;
+  width: 200px;
+}
+.header_menu_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+.header_menu_right ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.header_menu_right a {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.header_menu_right a:hover::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: -0.1em;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header_menu_right button {
+  padding: 9px 30px;
+  color: #B2D234;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .header_menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.header_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  position: relative;
+}
+.header_title h1 {
+  font-size: 5em;
+  position: relative;
+}
+@media screen and (max-width: 375px) {
+  .header_title h1 {
+    font-size: 3em;
+  }
+}
+.header_title p {
+  position: absolute;
+  transform: rotate(-9deg);
+  font-size: 2em;
+  top: 60%;
+  left: 50%;
+  font-style: italic;
+}
+@media screen and (max-width: 375px) {
+  .header_title p {
+    font-size: 1em;
+  }
+}
+.header_social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.header_social img {
+  margin: 20px 20px;
+  width: 2em;
+  height: 2em;
+}
+
+.prepare {
+  height: 100vh;
+  width: 100%;
+  background: url("img/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.prepare_content {
+  margin-right: 5em;
+  background-color: rgba(178, 210, 52, 0.8);
+  width: 500px;
+  text-align: center;
+  padding: 20px 20px;
+}
+.prepare_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.prepare_content_text h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.prepare_content_text p {
+  font-size: 18px;
+}
+.prepare_content_button button {
+  padding: 14px 60px;
+  margin-top: 20px;
+  color: #B2D234;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background: url("img/61842.png") repeat;
+}
+.about_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.about_content_text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+  padding-left: 100px;
+}
+.about_content_text h2 {
+  color: #B2D234;
+  font-size: 2em;
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+.about_content_text button {
+  margin-top: 40px;
+  padding: 14px 60px;
+  color: white;
+  background-color: #B2D234;
+  border: none;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.about_content_img {
+  width: 60%;
+  height: 100vh;
+  z-index: 1;
+}
+.about_content_img img {
+  width: 100%;
+  height: 100%;
+  object-position: 100px center;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

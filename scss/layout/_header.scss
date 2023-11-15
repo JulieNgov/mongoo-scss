@@ -1,0 +1,99 @@
+.header {
+    background: linear-gradient(rgba(#60A0D8, 0.62), rgba($clr-green, 0.62)), url('img/header.png');
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 18px;
+    padding: 1em;
+    position: relative;
+
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            flex-shrink: 0;
+            width: 200px;
+        }
+
+        &_right {
+            display: flex;
+            justify-content:  space-between;
+            align-items: center;
+            gap: 3em;
+
+            ul {
+                display: flex;
+                justify-content:  space-between;
+                gap: 2em;
+            }
+
+            a {
+                color: white;
+                display: inline-block;
+                position: relative;
+
+                &:hover::after {
+                    content: "";
+                    height: 2px;
+                    width: 50%;
+                    background-color: white;
+                    position: absolute;
+                    bottom: -.1em;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+
+            button {
+                padding: 9px 30px;
+                @include button($clr-green, white);
+            }
+        }
+
+        @include bp(1000px) {
+            flex-direction: column;
+            flex-wrap: wrap
+        }
+    }
+
+    &_title {
+        @include flexCenter();
+        flex-direction: column;
+        height: 50%;
+        position: relative;
+
+        h1 {
+            font-size: 5em;
+            position: relative;
+
+            @include bp(375px) {
+                font-size: 3em;
+              }
+        }
+
+        p {
+            position: absolute;
+            transform: rotate(-9deg);
+            font-size: 2em;
+            top: 60%;
+            left: 50%;
+            font-style: italic;
+            @include bp(375px) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    &_social {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            margin: 20px 20px;
+            width: 2em;
+            height: 2em;
+        }
+    }
+}
